@@ -5,7 +5,13 @@ This is the configuration tree for:
 
   Debian SilentCloud-Kiosk...
   
-Must me root new building.
+Must be root when building.
+
+Pre req:
+Working docker.
+Network for getting .deb and kernel
+Folder at / not neccesarily on main system Can be on external drive.
+
 
 
 A software called live-build can be used to automatically build images from
