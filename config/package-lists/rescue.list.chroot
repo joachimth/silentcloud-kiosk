@@ -23,15 +23,6 @@ moreutils
 # Editors
 aview mc nano-tiny mg vim wdiff hexedit nvi tweak
 
-# Harddisk
-dvd+rw-tools genisoimage sdparm hdparm blktool parted partimage secure-delete scsitools smartmontools testdisk wodim wipe hddtemp bonnie++
-par2 dvd+rw-tools
-fsarchiver
-#if DISTRIBUTION sid jessie
-clonezilla
-nwipe
-#endif
-
 # for /usr/bin/summer:
 chiark-utils-bin
 
@@ -48,6 +39,7 @@ read-edid
 
 # Browser
 lynx links2 w3m
+chromium
 
 # Compression
 arj bzip2 lzma p7zip-full unace unrar-free unzip zip lzop ncompress
