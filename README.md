@@ -22,3 +22,5 @@ live-build can be used to build this image with the following command executed
 in this directory::
 
   # lb build
+dd if=live-image-amd64.hybrid.iso of=/dev/sdX bs=4096 status=progress
+

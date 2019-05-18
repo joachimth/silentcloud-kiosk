@@ -2,24 +2,17 @@
 
 set -e
 
-case "$(dpkg --print-architecture)" in
-	amd64)
-		_LINUX_FLAVOURS="amd64"
-		_SOURCE="false"
-		;;
-
-	i386)
-		_LINUX_FLAVOURS="486 686-pae"
-		_SOURCE="true"
-		;;
-esac
-
+# Enable all repositories and backports (for zfs).
 lb config noauto \
-	--clean \
-	--ignore-system-defaults \
-	--mode debian \
+	--architectures amd64 \
+	--system live \
+	--updates true \
+	--backports true \
+	--security true \
+	--archive-areas "main contrib non-free" \
 	--debian-installer live \
-	--linux-flavours "${_LINUX_FLAVOURS}" \
+	--bootappend-live "boot=live components hostname=sctech" \
 	--linux-packages "linux-image linux-headers" \
-	--source "${_SOURCE}" \
-"${@}"
+	--mirror-binary http://mirrors.dotsrc.org/debian/ \
+	--mirror-bootstrap http://mirrors.dotsrc.org/debian/ \
+	"$@"
