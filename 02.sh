@@ -7,7 +7,7 @@ lb config \
 	--binary-images iso-hybrid \
 	"$@"
 
-echo task-kde-desktop >config/package-lists/my-live.list.chroot
+echo task-lxde-desktop >config/package-lists/my-live.list.chroot
 
 echo \
 	cryptsetup \

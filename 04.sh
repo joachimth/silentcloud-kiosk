@@ -6,8 +6,11 @@
 #pv -p 
 lb build
 
-# List devices, if lsscsi is available.
-lsscsi 2>/dev/null || true
+# List devices, if lsscsi is available. Should hit usb drives only..
+lsscsi 6>/dev/null || true
+
+#Clean the house
+#lb clean Also removes the iso file..
 
 echo 'Time to "burn", make sure you use the right drive:'
-echo "  dd if=live-image-amd64.img of=/dev/sdX bs=4096 status=progress"
+echo " start by using ONLY IF /dev/sdb !!! ./05.sh"
