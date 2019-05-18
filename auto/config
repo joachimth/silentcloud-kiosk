@@ -15,4 +15,5 @@ lb config noauto \
 	--linux-packages "linux-image linux-headers" \
 	--mirror-binary http://mirrors.dotsrc.org/debian/ \
 	--mirror-bootstrap http://mirrors.dotsrc.org/debian/ \
+    --clean \
 	"$@"

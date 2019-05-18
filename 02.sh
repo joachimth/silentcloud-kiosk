@@ -12,21 +12,9 @@ lb config \
 	--binary-images iso-hybrid \
 	"$@"
 
-echo task-lxde-desktop >config/package-lists/my-live.list.chroot
+#echo task-lxde-desktop >config/package-lists/my-live.list.chroot
 
 echo \
-	cryptsetup \
-	curl \
-	dosfstools \
-	less \
-	lsb-release \
-	lshw \
-	lvm2 \
-	mdadm \
-	net-tools \
-	pciutils \
-	smartmontools \
-	usbutils \
 	acpid \
 	chromium \
 	>config/package-lists/tools.list.chroot
