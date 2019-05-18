@@ -13,4 +13,4 @@ lsscsi 6>/dev/null || true
 #lb clean Also removes the iso file..
 
 echo 'Time to "burn", make sure you use the right drive:'
-echo " start by using ONLY IF /dev/sdb !!! ./05.sh"
+echo " Start by using ONLY IF /dev/sdb !!! ./05.sh"
