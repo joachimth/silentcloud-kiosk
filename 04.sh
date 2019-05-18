@@ -3,7 +3,8 @@
 # This script builds custom debian live images, using live-build.
 #
 # Let there be image.
-pv -p lb build
+#pv -p 
+lb build
 
 # List devices, if lsscsi is available.
 lsscsi 2>/dev/null || true
