@@ -13,7 +13,7 @@ lb config \
     --quiet \
 	"$@"
 
-echo "lightdm i3" >config/package-lists/my-live.list.chroot
+echo task-lxde-desktop >config/package-lists/my-live.list.chroot
 
 echo \
     kbd \
@@ -28,4 +28,5 @@ echo \
 	usbutils \
     switchsh \
     apt \
+    unclutter \
 	>config/package-lists/tools.list.chroot
