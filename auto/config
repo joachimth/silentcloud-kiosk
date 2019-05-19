@@ -9,7 +9,7 @@ lb config noauto \
 	--updates true \
 	--backports true \
 	--security true \
-    --apt-recommends false \
+    --apt-recommends true \
 	--win32-loader false \
 	--archive-areas "main contrib non-free" \
 	--debian-installer live \
