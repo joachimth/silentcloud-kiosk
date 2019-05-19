@@ -15,8 +15,8 @@ lb config noauto \
 	--bootappend-live "boot=live components hostname=sctech" \
 	--linux-packages "linux-image linux-headers" \
 	--memtest none \
-	--mirror-binary http://mirrors.dotsrc.org/debian/dists/ \
-	--mirror-bootstrap http://mirrors.dotsrc.org/debian/dists/ \
-    --mirror-binary-security http://mirrors.dotsrc.org/debian/dists/ \
+	--mirror-binary http://mirrors.dotsrc.org/debian/ \
+	--mirror-bootstrap http://mirrors.dotsrc.org/debian/ \
+    --mirror-binary-security http://mirrors.dotsrc.org/debian/ \
     --clean \
 	"$@"
