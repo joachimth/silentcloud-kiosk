@@ -7,4 +7,6 @@ echo 'Time to "burn", make sure you use the right drive:'
 
 #lb sudo dd if=/dev/sdb | pv -s 2G | dd of=live-image-amd64.hybrid.iso bs=4096
 cp live-image-amd64.hybrid.iso work.iso
-dd if=work.iso of=/dev/sdb bs=4096 status=progress
+#dd if=work.iso of=/dev/sdb bs=8M status=progress
+sudo umount /dev/sdb
+pv -tpreb /media/sctry/work.iso | dd of=/dev/sdb bs=8M
