@@ -10,6 +10,7 @@ done
 lb config \
 	--distribution stretch \
 	--binary-images iso-hybrid \
+    --quiet \
 	"$@"
 
 echo "lightdm i3" >config/package-lists/my-live.list.chroot
@@ -25,4 +26,6 @@ echo \
 	lshw \
 	net-tools \
 	usbutils \
+    switchsh \
+    apt \
 	>config/package-lists/tools.list.chroot
