@@ -19,6 +19,6 @@ lb config noauto \
     --initramfs live-boot \
 	--mirror-binary http://mirrors.dotsrc.org/debian/ \
 	--mirror-bootstrap http://mirrors.dotsrc.org/debian/ \
-    --image-name "SC-Kiosk085" \
+    --image-name "SCKiosk085" \
     --clean \
 	"$@"

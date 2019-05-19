@@ -15,6 +15,8 @@ lb config \
 echo "lightdm i3" >config/package-lists/my-live.list.chroot
 
 echo \
+    kbd \
+    lsb-release \
     chromium-shell \
     lxtask \
 	acpid \
