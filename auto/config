@@ -12,11 +12,11 @@ lb config noauto \
 	--win32-loader false \
 	--archive-areas "main contrib non-free" \
 	--debian-installer live \
-	--bootappend-live "boot=live components hostname=sctech" \
+	--bootappend-live "boot=live components hostname=scclient" \
 	--linux-packages "linux-image linux-headers" \
 	--memtest none \
 	--mirror-binary http://mirrors.dotsrc.org/debian/ \
 	--mirror-bootstrap http://mirrors.dotsrc.org/debian/ \
-    --mirror-binary-security http://mirrors.dotsrc.org/debian/ \
-    --clean \
+	--mirror-binary-security http://mirrors.dotsrc.org/debian/ \
+	--clean \
 	"$@"
